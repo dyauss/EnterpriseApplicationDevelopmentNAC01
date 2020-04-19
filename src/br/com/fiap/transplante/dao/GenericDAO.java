@@ -4,7 +4,7 @@ public interface GenericDAO<T, K> {
 
 	void cadastrar(T entity);
 	
-	void ler (K key);
+	T ler (K key);
 	
 	void atualizar(T entity);
 	
