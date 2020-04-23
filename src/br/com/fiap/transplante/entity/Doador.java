@@ -16,7 +16,7 @@ public class Doador {
 	@Column(name="nm_doador")
 	private String nome;
 	
-	@Column(name="ds_tipo_sanguineo")
+	@Column(name="ds_sangue_doador")
 	private String tipoSanguineo;
 
 	public Doador() {

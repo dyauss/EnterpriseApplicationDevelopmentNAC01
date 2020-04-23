@@ -16,7 +16,7 @@ public class Receptor {
 	@Column(name="nm_receptor")
 	private String nome;
 	
-	@Column(name="ds_tipo_sanguineo")
+	@Column(name="ds_sangue_receptor")
 	private String tipoSanguineo;
 
 	public Receptor() {
