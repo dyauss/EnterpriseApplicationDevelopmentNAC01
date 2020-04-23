@@ -6,6 +6,8 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "TB_TRANSPLANTE")
@@ -15,6 +17,7 @@ public class Transplante {
 	@Column(name="cd_transplante")
 	private int codigo;
 	
+	@Temporal(TemporalType.DATE)
 	@Column(name="dt_cirurgia")
 	private Calendar cirurgia;
 
