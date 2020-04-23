@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D5CE197-96DD-D6BD-39E0-2B6D1511D270" name="TB_ESTADIA">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:04:11 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_estadia" id="87328D75-5A64-B726-BC86-C6B6C204C301">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:04:19 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_receptor" id="EF9C22CA-2429-0C1D-F872-22C8B0DB8541">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:05:43 UTC</createdTime>
+<generatorID>0BEB3ACB-96B7-7EAB-958B-DFFE32CADCD1</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<referedAttribute>CD89340A-E3B7-1B93-D86F-3AD629C1AA32</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_quarto" id="70ECB387-8933-4743-231A-483EF3F3C308">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:04:24 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_medicamentos" id="B93B4902-88D1-DA57-DA7C-7CDBC3BD1010">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:04:30 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E1DF1CE6-E0A6-13C1-504C-7807F1742A01" name="TB_ESTADIA PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:04:23 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>87328D75-5A64-B726-BC86-C6B6C204C301</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

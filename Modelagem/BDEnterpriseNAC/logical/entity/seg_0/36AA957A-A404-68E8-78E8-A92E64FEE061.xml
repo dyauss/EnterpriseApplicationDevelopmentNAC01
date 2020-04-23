@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="36AA957A-A404-68E8-78E8-A92E64FEE061" name="TB_ORGAO">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:54:00 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_orgao" id="D78D611A-D1D8-4EFA-D68F-0C091302A510">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:57:36 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_doador" id="4CF13C48-46F9-D8C2-0479-96F1B4346A29">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 02:13:34 UTC</createdTime>
+<generatorID>BBB9328B-1B3C-2045-87D8-A6C7768BF520</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<referedAttribute>02860CCC-6EE5-3D63-59AC-EA6602815934</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_receptor" id="6A2B1BE9-EA57-E1F1-4A74-356F315B25DF">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 02:19:18 UTC</createdTime>
+<generatorID>69220E5D-28BB-B76A-E6AB-E9889CAEA0C6</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>CD89340A-E3B7-1B93-D86F-3AD629C1AA32</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_orgao" id="1E48D54D-9A34-9CE3-4745-4A12DB43A828">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:58:01 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_retirada" id="EAF6BD00-D78E-4362-DAB5-FED5433294CE">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:58:08 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_validade" id="485F301A-5A76-588E-8FD3-BB1E6C5FE847">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:58:15 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="82EC1A52-287E-821F-3F30-9009D993C6FB" name="TB_ORGAO PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:57:43 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D78D611A-D1D8-4EFA-D68F-0C091302A510</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

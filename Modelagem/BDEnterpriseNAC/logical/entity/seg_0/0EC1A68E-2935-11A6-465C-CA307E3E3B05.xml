@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="0EC1A68E-2935-11A6-465C-CA307E3E3B05" name="TB_RECEPTOR">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:55:35 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_receptor" id="CD89340A-E3B7-1B93-D86F-3AD629C1AA32">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:58:57 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_estadia" id="D8620A12-1E84-888D-5357-BD2A2E05FE5C">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:15 UTC</createdTime>
+<generatorID>0BEB3ACB-96B7-7EAB-958B-DFFE32CADCD1</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<referedAttribute>87328D75-5A64-B726-BC86-C6B6C204C301</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_receptor" id="18B9C703-44E4-3816-25FF-1D97966F1154">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:59:07 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_sangue_receptor" id="C65276C8-28BB-7D28-E00B-4BF5645B703D">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:59:14 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="70BA8BE3-083F-F6CE-D634-C8A0B26CE668" name="TB_RECEPTOR PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:59:06 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CD89340A-E3B7-1B93-D86F-3AD629C1AA32</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

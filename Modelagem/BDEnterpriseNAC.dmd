@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="BDEnterpriseNAC" id="75FC76EB-82B2-03C9-856D-113FEFAD8721" version="3.5">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:45:35 UTC</createdTime>
+<ownerDesignName>BDZAO</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>75FC76EB-82B2-03C9-856D-113FEFAD8721</designId>
+</OSDM_Design>

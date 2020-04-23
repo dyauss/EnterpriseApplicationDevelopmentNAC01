@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10D1BB3D-28F1-03C3-09CF-5C37A37FD212" name="TB_ORGAO">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>36AA957A-A404-68E8-78E8-A92E64FEE061</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_orgao" id="A331C644-661A-64A7-04C2-2CBB89A24A2E">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>D78D611A-D1D8-4EFA-D68F-0C091302A510</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_doador" id="199A97AC-DD01-D2FD-2F84-5A49A49F151A">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>4CF13C48-46F9-D8C2-0479-96F1B4346A29</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C4BF62A3-B4EA-241A-CC0E-7E49E038A939" referredColumn="7B585009-A5B7-179C-B83B-561D5856E8C7"/>
+</associations>
+</Column>
+<Column name="cd_receptor" id="11FADD75-32D4-8373-7EB7-F5DBA0601FD6">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>6A2B1BE9-EA57-E1F1-4A74-356F315B25DF</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4FA5EBFD-C70C-B927-E90E-DD076ED316B9" referredColumn="26DF8497-75FE-47D2-1E56-928010743954"/>
+</associations>
+</Column>
+<Column name="nm_orgao" id="4E0E2297-3752-AFF5-08C8-B2F44DB4189B">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>1E48D54D-9A34-9CE3-4745-4A12DB43A828</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_retirada" id="2F7633AC-7591-17F7-127A-F801E4EEF052">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>EAF6BD00-D78E-4362-DAB5-FED5433294CE</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_validade" id="CDEE50C2-0BB2-26F1-0543-CD1D173EDAA3">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>485F301A-5A76-588E-8FD3-BB1E6C5FE847</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B4CF3B0-8A96-A649-B3F2-2C3E8A0F748F" name="TB_ORGAO_PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>82EC1A52-287E-821F-3F30-9009D993C6FB</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A331C644-661A-64A7-04C2-2CBB89A24A2E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D62E5C82-F810-8998-A821-B8968F6DAA10" name="TB_ORGAO_TB_DOADOR_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>BBB9328B-1B3C-2045-87D8-A6C7768BF520</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="199A97AC-DD01-D2FD-2F84-5A49A49F151A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D091F604-8338-CAE9-B3D7-6FFC3068CFA2" name="TB_ORGAO_TB_RECEPTOR_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>69220E5D-28BB-B76A-E6AB-E9889CAEA0C6</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11FADD75-32D4-8373-7EB7-F5DBA0601FD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

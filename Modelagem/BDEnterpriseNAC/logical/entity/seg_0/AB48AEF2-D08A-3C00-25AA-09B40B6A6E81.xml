@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="AB48AEF2-D08A-3C00-25AA-09B40B6A6E81" name="TB_TRANSPLANTE">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 01:56:46 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_transplante" id="7767DBF0-7AB8-A4AE-8366-22DB40F0DB7D">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 02:00:37 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_receptor" id="F8D61481-FA1B-4D72-76DD-C6B71261125A">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 02:22:38 UTC</createdTime>
+<generatorID>D16CA0B7-4259-C7F7-91A5-57E0994AD8D3</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<referedAttribute>CD89340A-E3B7-1B93-D86F-3AD629C1AA32</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_cirurgia" id="68E74F1B-CBED-EDF2-D17C-647258B8ED12">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 02:01:44 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="795B1334-DF24-4A85-D8AE-7BA368C3E2E8" name="TB_TRANSPLANTE PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-22 02:00:41 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<engineerTo>
+<item key="6FA95079-6349-AEF7-5558-A691512A547A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7767DBF0-7AB8-A4AE-8366-22DB40F0DB7D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

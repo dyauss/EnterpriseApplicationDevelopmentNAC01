@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02CFE400-C631-D831-AA05-87E97DEFBDE2" name="TB_TRANSPLANTE">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>AB48AEF2-D08A-3C00-25AA-09B40B6A6E81</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_transplante" id="1C45DECF-EAA2-4192-FBEB-0D2092DF21CD">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>7767DBF0-7AB8-A4AE-8366-22DB40F0DB7D</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_receptor" id="A943A67A-1EFB-CDB9-CBCC-0F32D1A7A422">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>F8D61481-FA1B-4D72-76DD-C6B71261125A</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C78431EA-1C81-659E-5C18-2845006E0851" referredColumn="26DF8497-75FE-47D2-1E56-928010743954"/>
+</associations>
+</Column>
+<Column name="dt_cirurgia" id="7DEFF578-11CB-174E-F1B5-7623CFED6224">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>68E74F1B-CBED-EDF2-D17C-647258B8ED12</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A8629FB-37C2-8195-C771-CAD60E90FC1F" name="TB_TRANSPLANTE_PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>795B1334-DF24-4A85-D8AE-7BA368C3E2E8</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C45DECF-EAA2-4192-FBEB-0D2092DF21CD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEDDBA1D-36FB-6699-07C1-64663EF589B2" name="TB_TRANSPLANTE_TB_RECEPTOR_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-23 15:12:55 UTC</createdTime>
+<generatorID>D16CA0B7-4259-C7F7-91A5-57E0994AD8D3</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A943A67A-1EFB-CDB9-CBCC-0F32D1A7A422"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
