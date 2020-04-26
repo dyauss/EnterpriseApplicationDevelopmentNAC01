@@ -18,7 +18,7 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "TB_CIRURGIAO")
-@SequenceGenerator(sequenceName = "SQ_TB_CIRURGIAO", name = "cirurgiao", allocationSize = 1)
+@SequenceGenerator(name = "cirurgiao", sequenceName = "SQ_TB_CIRURGIAO",  allocationSize = 1)
 public class Cirurgiao {
 
 	@Id
@@ -49,7 +49,6 @@ public class Cirurgiao {
 
 	public Cirurgiao() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public int getCodigo() {

@@ -18,7 +18,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "TB_DOADOR")
-@SequenceGenerator(sequenceName = "SQ_TB_DOADOR", name = "doador", allocationSize = 1)
+@SequenceGenerator(name = "doador", sequenceName = "SQ_TB_DOADOR",  allocationSize = 1)
 public class Doador {
 	
 	@Id
@@ -33,7 +33,8 @@ public class Doador {
 	private String tipoSangue;
 	
 
-	@OneToMany(mappedBy="doador", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+	@OneToMany(mappedBy="doador", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	//
 	private List<Orgao> orgaos =  new ArrayList<Orgao>(); 
 	
 	public List<Orgao> getOrgaos() {
@@ -47,8 +48,8 @@ public class Doador {
 
 	
 	public void addOrgaos(Orgao orgao) {
-		orgao.setDoador(this);
-		orgaos.add(orgao);
+		orgao.setDoador(this);//adiciona o doador no atributo que mapeia a FK
+		orgaos.add(orgao);//adiciona o orgao na lista
 	}
 
 	public int getCodigo() {
@@ -79,15 +80,12 @@ public class Doador {
 		super();
 	}
 
-	public Doador(String nome, String tipoSangue) {
+	public Doador(int codigo, String nome, String tipoSangue) {
 		super();
+		this.codigo = codigo;
 		this.nome = nome;
 		this.tipoSangue = tipoSangue;
 	}
-	
-	
-	
-	
-	
+			
 	
 }

@@ -1,5 +1,6 @@
 package br.com.nac.jpa.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -17,29 +18,39 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "TB_RECEPTOR")
-@SequenceGenerator(sequenceName = "SQ_TB_RECEPTOR", name = "receptor", allocationSize = 1)
+@SequenceGenerator(name = "receptor", sequenceName = "SQ_TB_RECEPTOR",  allocationSize = 1)
 public class Receptor {
-
+	
 	@Id
 	@Column(name = "cd_receptor")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "receptor")
 	private int codigo;
 	
-	@OneToOne
-	@JoinColumn(name = "cd_estadia", nullable = false)
-	private Estadia estadia;
+	@OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "receptor")
+	private RegistroEstadia registroEstadia;
 	
-	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL, mappedBy = "receptor")
-    private List<Orgao> orgaos;
-	
-	@OneToMany(mappedBy= "receptor")
-	private List<Transplante> transplantes;
+	@OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "receptor")
+	//
+	private List<Orgao> orgaos;
+
+	@OneToMany(cascade = CascadeType.ALL, mappedBy="receptor", fetch = FetchType.LAZY)
+	private List<Transplante> transplantes = new ArrayList<Transplante>();
 	
 	@Column(name = "nm_receptor", nullable = false, length = 100)
 	private String nome;
 	
 	@Column(name = "ds_sangue_receptor", nullable = false, length = 10)
 	private String tipoSangue;
+
+	public Receptor() {
+		super();
+	}
+
+	public Receptor(String nome, String tipoSangue) {
+		super();
+		this.nome = nome;
+		this.tipoSangue = tipoSangue;
+	}
 
 	public int getCodigo() {
 		return codigo;
@@ -65,33 +76,6 @@ public class Receptor {
 		this.tipoSangue = tipoSangue;
 	}
 
-	public Receptor() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public Receptor(String nome, String tipoSangue) {
-		super();
-		this.nome = nome;
-		this.tipoSangue = tipoSangue;
-	}
-
-	public Estadia getEstadia() {
-		return estadia;
-	}
-
-	public void setEstadia(Estadia estadia) {
-		this.estadia = estadia;
-	}
-
-	public List<Orgao> getOrgaos() {
-		return orgaos;
-	}
-
-	public void setOrgaos(List<Orgao> orgaos) {
-		this.orgaos = orgaos;
-	}
-
 	public List<Transplante> getTransplantes() {
 		return transplantes;
 	}
@@ -100,8 +84,17 @@ public class Receptor {
 		this.transplantes = transplantes;
 	}
 	
+	// Métodos add
 	
+	public void addTransplantes(Transplante transplante) {
+		transplante.setReceptor(this);
+		transplantes.add(transplante);
+	}
 	
+//	public void addEstadias(Estadia estadia) {
+//		estadia.setRegistroEstadia(this);
+//		estadias.add(estadia);
+//	}
 	
 	
 }

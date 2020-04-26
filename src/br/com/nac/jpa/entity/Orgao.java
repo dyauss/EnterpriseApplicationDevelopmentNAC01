@@ -16,33 +16,47 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "TB_ORGAO")
-@SequenceGenerator(sequenceName = "SQ_TB_ORGAO", name = "orgao", allocationSize = 1)
+@SequenceGenerator(name = "orgao", sequenceName = "SQ_TB_ORGAO",  allocationSize = 1)
 public class Orgao {
 
 	@Id
 	@Column(name = "cd_orgao")
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "orgao")
 	private int codigo;
-	
+
 	@ManyToOne
-	@JoinColumn(name = "cd_doador", nullable = false)
+	@JoinColumn(name = "cd_doador")
+	//nullable = false
 	private Doador doador;
-	
+
 	@ManyToOne
 	@JoinColumn(name = "cd_receptor")
+	//nullable = false
 	private Receptor receptor;
-	
+
 	@Column(name = "nm_orgao", nullable = false, length = 100)
 	private String nome;
-	
+
 	@Column(name = "dt_retirada", nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Calendar retirada;
-	
+
 	@Column(name = "dt_validade", nullable = false)
 	@Temporal(TemporalType.DATE)
 	private Calendar validade;
 
+	public Orgao() {
+		super();
+	}
+
+	public Orgao(Doador doador, Receptor receptor, String nome, Calendar retirada, Calendar validade) {
+		super();
+		this.doador = doador;
+		this.receptor = receptor;
+		this.nome = nome;
+		this.retirada = retirada;
+		this.validade = validade;
+	}
 
 	public Doador getDoador() {
 		return doador;
@@ -84,13 +98,6 @@ public class Orgao {
 		this.validade = validade;
 	}
 
-	public Orgao() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-	
-	
-
 	public Receptor getReceptor() {
 		return receptor;
 	}
@@ -99,15 +106,4 @@ public class Orgao {
 		this.receptor = receptor;
 	}
 
-	public Orgao(String nome, Calendar retirada, Calendar validade) {
-		super();
-		this.nome = nome;
-		this.retirada = retirada;
-		this.validade = validade;
-	}
-	
-	
-	
-	
-	
 }

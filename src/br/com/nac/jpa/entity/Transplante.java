@@ -19,7 +19,7 @@ import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "TB_TRANSPLANTE")
-@SequenceGenerator(sequenceName = "SQ_TB_TRANSPLANTE", name = "transplante", allocationSize = 1)
+@SequenceGenerator( name = "transplante",sequenceName = "SQ_TB_TRANSPLANTE", allocationSize = 1)
 public class Transplante {
 
 	@Id
@@ -40,8 +40,14 @@ public class Transplante {
 
 	public Transplante() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
+
+	public Transplante(Calendar dataCirurgia) {
+		super();
+		this.dataCirurgia = dataCirurgia;
+	}
+
+
 
 	public int getCodigo() {
 		return codigo;
@@ -56,11 +62,6 @@ public class Transplante {
 	}
 
 	public void setDataCirurgia(Calendar dataCirurgia) {
-		this.dataCirurgia = dataCirurgia;
-	}
-
-	public Transplante(Calendar dataCirurgia) {
-		super();
 		this.dataCirurgia = dataCirurgia;
 	}
 

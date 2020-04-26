@@ -48,7 +48,9 @@ public abstract class GenericDAOImpl<T, K> implements GenericDAO<T, K> {
 	public void commit() throws CommitException {
 		try {
 			em.getTransaction().begin();
+			System.out.println("Begin ok");
 			em.getTransaction().commit();
+			System.out.println("Commit ok");
 		} catch (Exception e) {
 			em.getTransaction().rollback();
 			throw new CommitException(e.getMessage());
