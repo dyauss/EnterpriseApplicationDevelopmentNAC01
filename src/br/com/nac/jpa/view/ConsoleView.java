@@ -8,8 +8,10 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
+import br.com.nac.jpa.dao.DoadorDAO;
 import br.com.nac.jpa.dao.OrgaoDAO;
 import br.com.nac.jpa.dao.RegistroEstadiaDAO;
+import br.com.nac.jpa.dao.impl.DoadorDAOImpl;
 import br.com.nac.jpa.dao.impl.OrgaoDAOImpl;
 import br.com.nac.jpa.dao.impl.RegistroEstadiaDAOImpl;
 import br.com.nac.jpa.entity.Cirurgiao;
@@ -32,6 +34,7 @@ public class ConsoleView {
 
 		RegistroEstadiaDAO registroDao = new RegistroEstadiaDAOImpl(em);
 		OrgaoDAO orgaoDao = new OrgaoDAOImpl(em);
+		DoadorDAO doadorDao = new DoadorDAOImpl(em);
 
 		// Fazer um dao aqui em cima
 
@@ -68,20 +71,25 @@ public class ConsoleView {
 		}
 		
 		//
-//		Orgao figado = new Orgao(doador1, 3, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
-//		Doador doador1 = new Doador(1, "Thandy", "A+");
 
+//		Doador doador1 = new Doador("Dyaus", "B+");
+//		Orgao figado = new Orgao(doador1, receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
+		
 		Doador doador1 = new Doador("Dyaus", "B+");
-		Orgao figado = new Orgao(doador1, receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
+		
+		doador1.addOrgaos(new Orgao(receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11)));
 		
 		
 		try {
 			registroDao.cadastrar(reg);
 			registroDao.commit();
 			System.out.println("Deu bom o registroDao");
-			orgaoDao.cadastrar(figado);
-			orgaoDao.commit();
-			System.out.println("Deu bom o orgaoDao");
+//			orgaoDao.cadastrar(figado);
+//			orgaoDao.commit();
+			doadorDao.cadastrar(doador1);
+			System.out.println("Cadastro do doador deu bom");
+			doadorDao.commit();
+			System.out.println("Deu bom o doador");
 			System.out.println("Deu tudo bom :D");
 		} catch (CommitException e) {
 			System.out.println("Deu ruim. Erro: " + e);

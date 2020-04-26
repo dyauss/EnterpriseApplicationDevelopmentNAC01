@@ -49,9 +49,9 @@ public class Orgao {
 		super();
 	}
 
-	public Orgao(Doador doador, Receptor receptor, String nome, Calendar retirada, Calendar validade) {
+	public Orgao(Receptor receptor, String nome, Calendar retirada, Calendar validade) {
 		super();
-		this.doador = doador;
+		//this.doador = doador;
 		this.receptor = receptor;
 		this.nome = nome;
 		this.retirada = retirada;
