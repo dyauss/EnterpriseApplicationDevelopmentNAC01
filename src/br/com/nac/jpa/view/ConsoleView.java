@@ -71,7 +71,7 @@ public class ConsoleView {
 //		Orgao figado = new Orgao(doador1, 3, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
 //		Doador doador1 = new Doador(1, "Thandy", "A+");
 
-		Doador doador1 = new Doador(1, "Dyaus", "B+");
+		Doador doador1 = new Doador("Dyaus", "B+");
 		Orgao figado = new Orgao(doador1, receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
 		
 		
@@ -84,7 +84,7 @@ public class ConsoleView {
 			System.out.println("Deu bom o orgaoDao");
 			System.out.println("Deu tudo bom :D");
 		} catch (CommitException e) {
-			System.out.println("Deu ruim");
+			System.out.println("Deu ruim. Erro: " + e);
 		}
 
 		// fechar as paradas

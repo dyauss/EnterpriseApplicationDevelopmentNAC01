@@ -80,9 +80,8 @@ public class Doador {
 		super();
 	}
 
-	public Doador(int codigo, String nome, String tipoSangue) {
+	public Doador(String nome, String tipoSangue) {
 		super();
-		this.codigo = codigo;
 		this.nome = nome;
 		this.tipoSangue = tipoSangue;
 	}
