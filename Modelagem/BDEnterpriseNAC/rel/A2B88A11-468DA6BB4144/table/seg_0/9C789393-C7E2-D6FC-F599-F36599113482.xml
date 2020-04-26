@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9C789393-C7E2-D6FC-F599-F36599113482" name="TB_DOADOR">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:43:13 UTC</createdTime>
+<generatorID>C545310D-C431-F373-9BE8-650BA1370628</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_doador" id="AD601ED0-D272-9CBE-A3EE-B9F136FAFCAE">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:43:13 UTC</createdTime>
+<generatorID>02860CCC-6EE5-3D63-59AC-EA6602815934</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_doador" id="4DB67C44-71E3-CC6C-F445-AE8CB8934072">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:43:13 UTC</createdTime>
+<generatorID>7DA3B3E8-1434-7867-4CB8-F6CFB631BDC3</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_sangue_doador" id="2703693F-776E-ABEC-77D9-97E2088C981F">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:43:13 UTC</createdTime>
+<generatorID>77A23E0E-7D4B-9927-F4CE-969E1D4CF178</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="04C852DE-509F-2A0C-4B74-7598059A8CDD" name="TB_DOADOR_PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:43:13 UTC</createdTime>
+<generatorID>54F86D44-890C-C9B0-CA8B-6B510270D460</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD601ED0-D272-9CBE-A3EE-B9F136FAFCAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

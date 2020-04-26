@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="49C46EF2-D0DC-55F1-04C8-25FF69F0E7D8" name="TB_CIRURGIAO">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>137D8EB4-C4EF-E1B4-F715-9E5126A2FCB1</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cirurgiao" id="D67805AD-AF64-25AC-B145-67C0CD9D19D6">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>B2F486C6-DD4F-7B42-1A7C-2A868FFDD69F</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cirurgiao" id="FF239641-9D69-BEAF-10BB-C0F508025619">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>4F814D15-31A3-1862-75F0-D7F3118CDDA3</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="473DBD4D-C890-4EFD-5C6E-5412A7D3EBB7" name="TB_CIRURGIAO_PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>749618D0-D449-AE33-4F83-A0896228CDA1</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D67805AD-AF64-25AC-B145-67C0CD9D19D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CF3B7DF4-AA91-A967-9E1E-117DB3791E3F" name="TB_ESTADIA">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>F93BC4B8-FF2A-3EC0-E404-C421923C29F7</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_estadia" id="800E1ECE-7AA9-8C7B-AEE7-4C0AE2B6D2A3">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>991D65F8-A9DE-0435-07EF-3375E69269CA</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_registro_estadia" id="00B1D570-39CE-CB2C-700B-6DC198B80CA4">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>1E206C63-989B-6441-B98C-68CC0C6544E1</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A5E50AAD-6AFA-02D8-3E8B-442455430726" referredColumn="F22A5A8E-80D2-8F06-0184-36AE9ECB78A3"/>
+</associations>
+</Column>
+<Column name="nr_quarto" id="CD2B2CE4-445F-A599-009B-C22CD904D6BD">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>5BC1308D-0E56-5473-7D21-7CE1EFD6124E</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_medicamentos" id="3BCA72BD-C03F-A1B8-ADEC-F2691BFFA4F6">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>1DF058E0-73DF-6441-9037-E7756EC86BC1</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_entrada" id="B5905095-ADE0-9498-B879-B974B502BCEA">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>208EEDB1-40C8-C138-1E0B-DDA079EBACCD</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_saida" id="1EDED0AD-5400-1737-4EE8-80CDDC02DA92">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>C377653C-B5E0-0852-9543-B2F426465364</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE18463D-BD02-7B4A-AFDB-4522EF73CD7E" name="TB_ESTADIA_PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>0C19294B-7734-A7AB-A07B-873B7265F068</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="800E1ECE-7AA9-8C7B-AEE7-4C0AE2B6D2A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6348330-2570-D676-F543-DB2D739EAA17" name="TB_ESTADIA_TB_REGISTRO_ESTADIA_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>7FE897FB-39F2-63C1-15F6-02D5605F3519</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00B1D570-39CE-CB2C-700B-6DC198B80CA4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

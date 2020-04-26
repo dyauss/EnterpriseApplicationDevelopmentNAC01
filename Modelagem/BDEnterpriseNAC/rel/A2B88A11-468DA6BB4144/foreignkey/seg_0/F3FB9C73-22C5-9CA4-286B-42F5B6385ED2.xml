@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F3FB9C73-22C5-9CA4-286B-42F5B6385ED2" containerWithKeyObject="C352A492-0C08-829B-A7D9-7E11D711B5BF" localFKIndex="7D6D5272-C27C-C96D-F9BF-186185201454" name="TB_ESTADIA_TB_REGISTRO_ESTADIA_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:43:13 UTC</createdTime>
+<generatorID>7FE897FB-39F2-63C1-15F6-02D5605F3519</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<referredTableLongName>TB_REGISTRO_ESTADIA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>51EA15C2-07B9-0415-CE87-2BAE1EA3D90A</referredTableID>
+<keyObject>E589A9EF-E78B-8AE9-71D9-E4C1E7D363F6</keyObject>
+<referredKeyID>E589A9EF-E78B-8AE9-71D9-E4C1E7D363F6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_registro_estadia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

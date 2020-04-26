@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9FFE1052-3F99-2CCD-BE8E-96B56198B1FB" containerWithKeyObject="998E3BAC-E07F-7956-97EB-63CCB0456C73" localFKIndex="F999ABA2-6D3C-F162-D38B-595B130F667A" name="TB_ORGAO_TB_RECEPTOR_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>69220E5D-28BB-B76A-E6AB-E9889CAEA0C6</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<referredTableLongName>TB_RECEPTOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B54E59F6-7917-39CC-73C7-9D69BE6E996D</referredTableID>
+<keyObject>45B5309A-E1C4-BA91-3498-57B6B4D7B4BA</keyObject>
+<referredKeyID>45B5309A-E1C4-BA91-3498-57B6B4D7B4BA</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>cd_receptor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

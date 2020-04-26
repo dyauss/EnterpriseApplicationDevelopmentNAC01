@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="23EF58E7-E207-366E-ED58-E862D2E4FF6C" containerWithKeyObject="F76FF9FA-4C93-E3F6-5AFD-26394DA0BE50" localFKIndex="BAFBF93F-82A9-7290-A4E8-625FBEEDBA6D" name="TB_TRANSPLANTE_CIRURGIAO_TB_TRANSPLANTE_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>5BFD1729-2B67-C6CA-F418-13C559120762</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<referredTableLongName>TB_TRANSPLANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>654C3F38-9B50-0BDC-C8A4-829312E1D353</referredTableID>
+<keyObject>5D343109-140A-57AB-7848-D1DCF900515B</keyObject>
+<referredKeyID>5D343109-140A-57AB-7848-D1DCF900515B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_transplante</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A959FEE6-22AE-BE4C-D65A-574FCFD55A5C" name="TB_REGISTRO_ESTADIA">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>3DE14463-20DF-8786-6135-29CDB2B88ACE</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_registro_estadia" id="F22A5A8E-80D2-8F06-0184-36AE9ECB78A3">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>A92435FB-1B71-BE9A-A1BE-A5DB7E4EDA02</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_receptor" id="12590F8D-9CD5-6424-D3BE-38AD9DD2862F">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>A4986FFB-5FB0-7BE9-6445-4957D7A0A154</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1613A39-676D-EBF4-A9A1-9248C3DFB09A" referredColumn="AD06204F-C141-A3D5-D965-A803F8C84532"/>
+</associations>
+</Column>
+<Column name="dt_abertura" id="F3FE4CBF-908D-9CC8-339A-6898E3D15B8E">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>AE4F20C3-4C06-4365-F051-DE9138034AA0</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2415AF2D-0BDA-3028-2349-5B78A36E6AEB" name="TB_REGISTRO_ESTADIA_PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>AE39C961-40B5-8ACC-4DE8-AA9035606009</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F22A5A8E-80D2-8F06-0184-36AE9ECB78A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C6568EE-E354-8EA7-A586-F16170DE6017" name="TB_REGISTRO_ESTADIA__IDX">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F90FA5BC-B37D-AC5E-6731-B485A0CF5CCC</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="12590F8D-9CD5-6424-D3BE-38AD9DD2862F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAD6B004-1AAE-04A5-F17D-493E7E379CBA" name="TB_REGISTRO_ESTADIA_TB_RECEPTOR_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>F90FA5BC-B37D-AC5E-6731-B485A0CF5CCC</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12590F8D-9CD5-6424-D3BE-38AD9DD2862F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

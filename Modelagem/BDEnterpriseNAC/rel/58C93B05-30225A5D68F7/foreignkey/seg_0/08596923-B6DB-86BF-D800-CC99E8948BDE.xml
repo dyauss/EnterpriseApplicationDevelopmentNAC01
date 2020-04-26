@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="08596923-B6DB-86BF-D800-CC99E8948BDE" containerWithKeyObject="F76FF9FA-4C93-E3F6-5AFD-26394DA0BE50" localFKIndex="91CEAF4F-F4BF-6ED6-DE3B-1F495FCCE174" name="TB_TRANSPLANTE_CIRURGIAO_TB_CIRURGIAO_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>5BFD1729-2B67-C6CA-F418-13C559120762</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<referredTableLongName>TB_CIRURGIAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>49C46EF2-D0DC-55F1-04C8-25FF69F0E7D8</referredTableID>
+<keyObject>473DBD4D-C890-4EFD-5C6E-5412A7D3EBB7</keyObject>
+<referredKeyID>473DBD4D-C890-4EFD-5C6E-5412A7D3EBB7</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_cirurgiao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

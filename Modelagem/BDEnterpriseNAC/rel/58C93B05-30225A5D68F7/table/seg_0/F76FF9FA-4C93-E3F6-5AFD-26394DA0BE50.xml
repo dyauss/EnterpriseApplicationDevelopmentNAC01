@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F76FF9FA-4C93-E3F6-5AFD-26394DA0BE50" name="TB_TRANSPLANTE_CIRURGIAO">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<ordsAlias>relation_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_transplante" id="A9A3DFB4-A923-F344-948A-395268B437A9">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23EF58E7-E207-366E-ED58-E862D2E4FF6C" referredColumn="256DBD47-6BE6-E5E0-ECF6-9AC231F706F9"/>
+</associations>
+</Column>
+<Column name="cd_cirurgiao" id="2FAE4EB0-998F-D4A3-A365-DC20D50B9DC7">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08596923-B6DB-86BF-D800-CC99E8948BDE" referredColumn="D67805AD-AF64-25AC-B145-67C0CD9D19D6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="11F181C8-C541-B3A0-8FAC-2198D4AC4E6C" name="TB_TRANSPLANTE_CIRURGIAO_PK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9A3DFB4-A923-F344-948A-395268B437A9"/>
+<colUsage columnID="2FAE4EB0-998F-D4A3-A365-DC20D50B9DC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BAFBF93F-82A9-7290-A4E8-625FBEEDBA6D" name="TB_TRANSPLANTE_CIRURGIAO_TB_TRANSPLANTE_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>5BFD1729-2B67-C6CA-F418-13C559120762</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9A3DFB4-A923-F344-948A-395268B437A9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91CEAF4F-F4BF-6ED6-DE3B-1F495FCCE174" name="TB_TRANSPLANTE_CIRURGIAO_TB_CIRURGIAO_FK">
+<createdBy>Thandy</createdBy>
+<createdTime>2020-04-26 16:10:09 UTC</createdTime>
+<generatorID>5BFD1729-2B67-C6CA-F418-13C559120762</generatorID>
+<ownerDesignName>BDEnterpriseNAC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2FAE4EB0-998F-D4A3-A365-DC20D50B9DC7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
