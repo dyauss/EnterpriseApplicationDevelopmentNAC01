@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TB_DOADOR_cd_doador" id="18E3918A-8E11-6682-867C-8F4987B3B58C">
+<Column name="cd_doador" id="18E3918A-8E11-6682-867C-8F4987B3B58C">
 <createdBy>Thandy</createdBy>
 <createdTime>2020-04-26 16:43:13 UTC</createdTime>
 <generatorID>4CF13C48-46F9-D8C2-0479-96F1B4346A29</generatorID>
@@ -34,12 +34,11 @@
 <colAssociation fkAssociation="150214FA-11A3-9929-F68D-E2B26F2A8F6B" referredColumn="AD601ED0-D272-9CBE-A3EE-B9F136FAFCAE"/>
 </associations>
 </Column>
-<Column name="TB_RECEPTOR_cd_receptor" id="ED902818-D928-9C63-A42C-50E782EB5231">
+<Column name="cd_receptor" id="ED902818-D928-9C63-A42C-50E782EB5231">
 <createdBy>Thandy</createdBy>
 <createdTime>2020-04-26 16:43:13 UTC</createdTime>
 <generatorID>6A2B1BE9-EA57-E1F1-4A74-356F315B25DF</generatorID>
 <ownerDesignName>BDEnterpriseNAC</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>

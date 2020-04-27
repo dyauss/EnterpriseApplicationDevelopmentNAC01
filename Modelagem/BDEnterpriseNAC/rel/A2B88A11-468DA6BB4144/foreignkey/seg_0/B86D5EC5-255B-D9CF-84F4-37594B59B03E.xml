@@ -9,7 +9,7 @@
 <referredTableID>1BE11FA1-687A-72E6-FC0A-661FD21241D0</referredTableID>
 <keyObject>7BD4F7C9-6718-7C1A-4BFC-C626424CB1F7</keyObject>
 <referredKeyID>7BD4F7C9-6718-7C1A-4BFC-C626424CB1F7</referredKeyID>
-<mandatory>false</mandatory>
+<mandatory>true</mandatory>
 <refColNames>cd_receptor</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

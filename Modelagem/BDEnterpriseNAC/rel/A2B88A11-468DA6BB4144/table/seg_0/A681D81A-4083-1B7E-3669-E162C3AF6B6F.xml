@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TB_RECEPTOR_cd_receptor" id="0DFDB920-D00F-789E-A5D1-40220AE7850E">
+<Column name="cd_receptor" id="0DFDB920-D00F-789E-A5D1-40220AE7850E">
 <createdBy>Thandy</createdBy>
 <createdTime>2020-04-26 16:43:13 UTC</createdTime>
 <generatorID>F8D61481-FA1B-4D72-76DD-C6B71261125A</generatorID>

@@ -19,7 +19,7 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="TB_REGISTRO_ESTADIA_cd_registro_estadia" id="CEA37940-F4A3-912E-0C48-F787839CBBFD">
+<Column name="cd_registro_estadia" id="CEA37940-F4A3-912E-0C48-F787839CBBFD">
 <createdBy>Thandy</createdBy>
 <createdTime>2020-04-26 16:43:13 UTC</createdTime>
 <generatorID>1E206C63-989B-6441-B98C-68CC0C6544E1</generatorID>

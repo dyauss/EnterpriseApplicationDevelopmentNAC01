@@ -31,30 +31,21 @@ public class ConsoleView {
 		RegistroEstadiaDAO registroDao = new RegistroEstadiaDAOImpl(em);
 		DoadorDAO doadorDao = new DoadorDAOImpl(em);
 
-//		Doador doador1 = new Doador(1, "Thandy", "A+");
-//		Orgao figado = new Orgao(doador1, 3, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
-
-		Receptor receptor = new Receptor("Thandy", "A+");
+		Receptor receptor = new Receptor("Dahyun", "O");
 		RegistroEstadia reg = new RegistroEstadia(receptor, new GregorianCalendar(2000, Calendar.APRIL, 20));
-
-		//
 
 		reg.addEstadias(new Estadia(302, "cloroquina", new GregorianCalendar(2020, Calendar.MARCH, 11),
 				new GregorianCalendar(2020, Calendar.MARCH, 14)));
 
 		receptor.addTransplantes(new Transplante(new GregorianCalendar(2020, Calendar.DECEMBER, 4)));
 
-		//
+		Doador doador1 = new Doador("Thandy", "A+");
 
-//		Doador doador1 = new Doador("Dyaus", "B+");
-//		Orgao figado = new Orgao(doador1, receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
-
-		Doador doador1 = new Doador("Dyaus", "B+");
-
-		doador1.addOrgaos(new Orgao(receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20),
+		doador1.addOrgaos(new Orgao(receptor, "coração", new GregorianCalendar(2000, Calendar.APRIL, 20),
 				new GregorianCalendar(2001, Calendar.AUGUST, 11)));
 
-		Cirurgiao hans = new Cirurgiao("Hans Chucrute", 48, new GregorianCalendar(1972, Calendar.SEPTEMBER, 14), receptor.getTransplantes());
+		Cirurgiao hans = new Cirurgiao("Hans Chucrute", 48, new GregorianCalendar(1972, Calendar.SEPTEMBER, 14),
+				receptor.getTransplantes());
 
 		List<Cirurgiao> cirurgioes = new ArrayList<Cirurgiao>();
 		cirurgioes.add(hans);
@@ -68,12 +59,10 @@ public class ConsoleView {
 			registroDao.commit();
 			doadorDao.cadastrar(doador1);
 			doadorDao.commit();
-			System.out.println("Deu tudo bom :D");
+			System.out.println("Entidades cadastradas!");
 		} catch (CommitException e) {
-			System.out.println("Deu ruim. Erro: " + e);
+			System.out.println("Erro: " + e);
 		}
-
-		// fechar as paradas
 		em.close();
 		fabrica.close();
 
