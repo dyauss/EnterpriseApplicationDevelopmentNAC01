@@ -9,10 +9,8 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 
 import br.com.nac.jpa.dao.DoadorDAO;
-import br.com.nac.jpa.dao.OrgaoDAO;
 import br.com.nac.jpa.dao.RegistroEstadiaDAO;
 import br.com.nac.jpa.dao.impl.DoadorDAOImpl;
-import br.com.nac.jpa.dao.impl.OrgaoDAOImpl;
 import br.com.nac.jpa.dao.impl.RegistroEstadiaDAOImpl;
 import br.com.nac.jpa.entity.Cirurgiao;
 import br.com.nac.jpa.entity.Doador;
@@ -30,66 +28,46 @@ public class ConsoleView {
 		EntityManagerFactory fabrica = EntityManagerFactorySingleton.getInstance();
 		EntityManager em = fabrica.createEntityManager();
 
-		// Até aqui EZPZ
-
 		RegistroEstadiaDAO registroDao = new RegistroEstadiaDAOImpl(em);
-		OrgaoDAO orgaoDao = new OrgaoDAOImpl(em);
 		DoadorDAO doadorDao = new DoadorDAOImpl(em);
-
-		// Fazer um dao aqui em cima
 
 //		Doador doador1 = new Doador(1, "Thandy", "A+");
 //		Orgao figado = new Orgao(doador1, 3, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
 
 		Receptor receptor = new Receptor("Thandy", "A+");
 		RegistroEstadia reg = new RegistroEstadia(receptor, new GregorianCalendar(2000, Calendar.APRIL, 20));
-		
+
 		//
-		
-		reg.addEstadias(new Estadia(302, "cloroquina", new GregorianCalendar(2020, Calendar.MARCH, 11), new GregorianCalendar(2020, Calendar.MARCH, 14)));
-		
+
+		reg.addEstadias(new Estadia(302, "cloroquina", new GregorianCalendar(2020, Calendar.MARCH, 11),
+				new GregorianCalendar(2020, Calendar.MARCH, 14)));
+
 		receptor.addTransplantes(new Transplante(new GregorianCalendar(2020, Calendar.DECEMBER, 4)));
-		
-		//Criar cirurgiões
-		
-		Cirurgiao hans = new Cirurgiao("Hans Chucrute", 48, new GregorianCalendar(1972, Calendar.SEPTEMBER, 14));
-//		
-//		//Criar list de cirurgioes
-//		
-		List<Cirurgiao> cirurgioes = new ArrayList<Cirurgiao>();
-		cirurgioes.add(hans);
-		
-		//
-				
-		//Relacionar
-		
-//		for (Filme f : loc.getFilmes()) {
-//		f.setClientes(clientes);
-//	}
-		for (Transplante tr : receptor.getTransplantes()) {
-			tr.setCirurgiao(cirurgioes);
-		}
-		
+
 		//
 
 //		Doador doador1 = new Doador("Dyaus", "B+");
 //		Orgao figado = new Orgao(doador1, receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11));
-		
+
 		Doador doador1 = new Doador("Dyaus", "B+");
-		
-		doador1.addOrgaos(new Orgao(receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20), new GregorianCalendar(2001, Calendar.AUGUST, 11)));
-		
-		
+
+		doador1.addOrgaos(new Orgao(receptor, "figado", new GregorianCalendar(2000, Calendar.APRIL, 20),
+				new GregorianCalendar(2001, Calendar.AUGUST, 11)));
+
+		Cirurgiao hans = new Cirurgiao("Hans Chucrute", 48, new GregorianCalendar(1972, Calendar.SEPTEMBER, 14), receptor.getTransplantes());
+
+		List<Cirurgiao> cirurgioes = new ArrayList<Cirurgiao>();
+		cirurgioes.add(hans);
+
+		for (Transplante tr : receptor.getTransplantes()) {
+			tr.setCirurgiao(cirurgioes);
+		}
+
 		try {
 			registroDao.cadastrar(reg);
 			registroDao.commit();
-			System.out.println("Deu bom o registroDao");
-//			orgaoDao.cadastrar(figado);
-//			orgaoDao.commit();
 			doadorDao.cadastrar(doador1);
-			System.out.println("Cadastro do doador deu bom");
 			doadorDao.commit();
-			System.out.println("Deu bom o doador");
 			System.out.println("Deu tudo bom :D");
 		} catch (CommitException e) {
 			System.out.println("Deu ruim. Erro: " + e);

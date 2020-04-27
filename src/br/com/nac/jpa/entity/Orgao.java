@@ -25,12 +25,12 @@ public class Orgao {
 	private int codigo;
 
 	@ManyToOne
-	@JoinColumn(name = "cd_doador")
+	@JoinColumn(name = "cd_doador", nullable = false)
 	//nullable = false
 	private Doador doador;
 
 	@ManyToOne
-	@JoinColumn(name = "cd_receptor")
+	@JoinColumn(name = "cd_receptor", nullable = false)
 	//nullable = false
 	private Receptor receptor;
 

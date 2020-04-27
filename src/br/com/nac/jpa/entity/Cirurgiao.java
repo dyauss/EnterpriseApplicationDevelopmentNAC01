@@ -36,15 +36,16 @@ public class Cirurgiao {
 	@Temporal(TemporalType.DATE)
 	private Calendar nascimento;
 
-	@ManyToMany()
+	@ManyToMany
 	@JoinTable(name = "TB_OPERACAO", joinColumns = @JoinColumn(name = "cd_cirurgiao"), inverseJoinColumns = @JoinColumn(name = "cd_transplante"))
 	private List<Transplante> transplante;
 
-	public Cirurgiao(String nome, int idade, Calendar nascimento) {
+	public Cirurgiao(String nome, int idade, Calendar nascimento, List<Transplante> transplante) {
 		super();
 		this.nome = nome;
 		this.idade = idade;
 		this.nascimento = nascimento;
+		this.transplante = transplante;
 	}
 
 	public Cirurgiao() {
@@ -91,4 +92,6 @@ public class Cirurgiao {
 		this.transplante = transplante;
 	}
 
+	
+	
 }
